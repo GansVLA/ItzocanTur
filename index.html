@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>ItzocanTur</title>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <script type="text/javascript" charset="utf-8" src="plugins/com.simonmacdonald.telephonenumber/www/telephonenumber.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+  </head>
+  <body>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+ 
+            <!-- Top Navbar. In Material theme it should be inside of the page-->
+            <div class="navbar theme-bluegray">
+              <div class="navbar-inner">
+              <a href="#" data-panel="left" class="open-panel"><span class="icon-menu"></span></a>
+              <div class="center"><small>Izúcar de Matamoros</small></div>
+              
+              </div>
+            </div>
+              <!-- Panels Overlay -->
+  <div class="panel-overlay"></div>
+ 
+ 
+  <!-- Right Panel with Cover effect -->
+  <div class="panel panel-left panel-cover">
+      
+     <a href="#" class="button button-raised button-fill color-blue close-panel">cerrar</a> 
+      <div class="list-block">
+  <ul>
+    <li>
+      <a href="#" class="item-link item-content external">
+          <div class="item-inner">
+          <div class="item-title"><b>Inicio</b></div>
+          </div>
+      </a>
+    </li>
+    <li>
+      <a href="visit.html" class="item-link item-content external">
+          <div class="item-inner">
+          <div class="item-title">Qué visitar</div>
+          </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item-link item-content">
+          <div class="item-inner">
+          <div class="item-title">Distracciones</div>
+          </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item-link item-content">
+        
+        <div class="item-inner">
+          <div class="item-title">Parques</div>
+          
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="maps/map-general.html" class="item-link item-content external">
+          <div class="item-inner">
+          <div class="item-title">Mapa</div>
+          </div>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+  </div>
+  <div class="page-content">
+    <div class="card demo-card-header-pic">
+      <div style="background-image:url(img/park.jpg)" valign="bottom" class="card-header color-white no-border">
+      <p class="title-c">Izúcar de Matamoros, Puebla.</p>
+      </div>
+      <div class="card-content">
+      <div class="card-content-inner">
+        <p class="color-gray">Izúcar de Matamoros, Puebla.</p>
+        <p>Nuestro municipio esta situado en el suroeste de el estado de Puebla, con un clima cálido y una gran riqueza histórica.</p> 
+      </div>
+    </div>
+    <div class="list-block accordion-list">
+      <ul>
+      <li class="accordion-item"><a href="#" class="item-content item-link">
+          <div class="item-inner">
+          <div class="item-title color-bluegray"> Más información</p></div>
+       </div></a>
+       <div class="accordion-item-content">
+          <p align="justify" style="padding-left:6px;padding-right:6px;">
+            En este Ex-Convento Dominico, se realizan recorridos guiados que se llevan a cabo el 1er y 3er miércoles de cada mes y 1er y 3er sábado de cada mes con un horario de 11 a.m. a 2 p.m. los miércoles y de 12 p.m. a 2 p.m. los sábados.
+            <br>
+            <b>Expositor:</b> <i>Arqueólogo Raúl Martínez</i><br>
+            <small>Cronista Municipal de Izúcar.</small>
+          </p>     
+   
+       </div>
+       </li>
+        <li class="accordion-item"><a href="#" class="item-content item-link">
+          <div class="item-inner">
+          <div class="item-title color-red"><span class="icon-location"></span> Ubicación</p></div>
+       </div></a>
+       <div class="accordion-item-content">
+         
+           <iframe src="maps/sto-dom.html" width="100%" height="230px" frameborder="2" seamless></iframe>
+        
+       </div>
+       </li>
+
+      </ul>
+    </div>
+    </div>
+    <a href="tel://2431124536" class="button button-fill color-green">Llamanos!</a><br>
+    <a href="mailto://gans.rke12@gmail.com" class="button button-fill color-red">Correo</a><br>
+    <a href="tel:+2431124536" class="button button-fill color-green">Llamanos!</a>
+    <br>
+  
+  <div id="ver" class=" anuncio">
+      <iframe src="banner.html" width="100%" height="140x;" scrolling="none" ></iframe>
+        <div align="right">
+          <a href="#" class="button button-raised  color-red" onclick="ocultar()" style="width:100%">ocultar anuncio</a>
+        </div>
+  </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html> 

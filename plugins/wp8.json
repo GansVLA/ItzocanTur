@@ -1,0 +1,13 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.simonmacdonald.telephonenumber": {}
+    },
+    "dependent_plugins": {}
+}

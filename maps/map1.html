@@ -1,0 +1,57 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gasolinera</title>
+   <style type="text/css">
+   
+    #gas{ 
+        width: 100%;
+        height: 230px; 
+      }
+    </style>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+    function gas() {
+      var marcadores = [
+        ['<h3>Gasolinera Santiaguito</h3>', 18.5991983,-98.4645767],
+        ['<h3>Gasolinera 4 Caminos</h3>', 18.6002548,-98.4771574],
+        ['<h3>Gasolinera Revolucion</h3>', 18.5934575,-98.4750254], 
+        ['<h3>Gasolinera</h3>'+'<small>Carretera Matamotos-Atencingo</small>', 18.598717, -98.482369],
+        ['<h3>Estación de Servicios Cañaverales</h3>',18.5715748,-98.5395516],
+               
+        ];
+      var map = new google.maps.Map(document.getElementById('gas'), {
+        zoom: 13,
+        center: new google.maps.LatLng(18.5982406,-98.4824261),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      var infowindow = new google.maps.InfoWindow();
+      
+      var marker, i;
+      for (i = 0; i < marcadores.length; i++) {  
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
+          map: map,
+          icon: '../img/green.png'
+          
+        
+        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(marcadores[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    </head>
+<body onload="gas()">
+
+    <div id="gas"></div>
+    
+</body>
+</html>

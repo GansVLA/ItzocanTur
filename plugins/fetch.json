@@ -1,0 +1,10 @@
+{
+    "com.simonmacdonald.telephonenumber": {
+        "source": {
+            "type": "registry",
+            "id": "com.simonmacdonald.telephonenumber @1.0.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

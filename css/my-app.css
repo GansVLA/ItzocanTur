@@ -1,0 +1,78 @@
+.swiper-custom {
+  position:relative;
+  height:100%;
+}
+.swiper-container {
+  height:100%;
+}
+.swiper-slide {
+  background: #fff;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 20px;
+  font-size:21px;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border:1px solid #aaa;
+  border-radius: 0 0 0 0;
+  opacity:1;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.swiper-pagination-bullet-active {
+  background: #007aff;
+  border-color: #007aff;
+}   
+.icon-menu{
+  font-size: 22px;
+  font-weight: lighter;
+}
+.title-c{
+  padding: 5px;
+  background: rgba(0,0,0,.6);
+  margin: -1px;
+  box-shadow: 0px 0px 1px rgba(0,0,0,.5);
+
+}
+
+.demo-card-header-pic .card-header {
+    height: 48vw;
+    background-size: cover;
+    background-position: center;
+  }
+  .popover{
+    width: 200px;
+  }
+  .icon-menu{
+    color: #fff;
+    padding-left: 10px;
+  }
+ .picker-modal{
+  box-shadow: 0px 0px 15px rgb(0,0,0);
+  position: absolute;
+
+ 
+  top: 100%
+
+ }
+ .c1{margin-top: -100px;} .s1{margin-top: -40px;margin-bottom: 4px;} .swiper-custom{max-height: 250px;} .accordion-item-content{text-align: justify;} .navbar{box-shadow: 0px 0px 6px rgba(0,0,0,.8)}
+
+ .anuncio{
+  background: #fefefe;
+  width: 100%;
+  height: 130px;
+  z-index: 1000;
+  
+  }
+iframe{
+  border: transparent;
+  border-radius: 7px;
+}
+.statusbar-overlay {
+    background: #607d8b;
+}
